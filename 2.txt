@@ -1,0 +1,37 @@
+SCSS 预处理器
+	是一种语言用来为 CSS 增加一些编程的的特性，不用考虑浏览器的兼容性问题，例如你可以在 CSS 中使用变量、简单的程序逻辑、函数等等在编程语言中的一些基本技巧，可以使CSS 更加简洁，适应性更强，代码更直观等好处。
+
+Sass
+
+	 是一门高于 CSS 的元语言，它能用来清晰地、结构化地描述文件样式，有着比普通 CSS 更加强大的功能。
+Sass 能够提供更简洁、更优雅的语法，同时提供多种功能来创建可维护和管理的样式表。
+
+
+Sass 和 SCSS 其实是同一种东西，我们平时都称之为 Sass，两者之间不同之处有以下两点：
+
+	文件扩展名不同，Sass 是以“.sass”后缀为扩展名，而 SCSS 是以“.scss”后缀为扩展名
+	语法书写方式不同，Sass 是以严格的缩进式语法规则来书写，不带大括号({})和分号(;)，而 SCSS 的语法书写和我们的 CSS 语法书写方式非常类似
+
+SASS的编译环境
+
+SASS的代码无法直接运用到项目中，要像使用CSS一样，我们就必须将SASS转译成CSS，然后在项目中调用转译出来的CSS。然而转译SASS就需要有一定的生产环境配合，才能完成。这也是玩SASS必须做的第一步。
+
+由于SASS是在Ruby环境下运行，所以大家首先需要在自己的工作电脑上安装Ruby
+
+
+输出方式
+1.嵌套输出方式
+@import url(reset.css)
+
+2.展开输出方式 expanded（默认样式）
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+3.紧凑输出方式
+nav ul { margin: 0; padding: 0; list-style: none; }
+
+4.压缩输出方式 
+nav ul{margin:0;padding:0;list-style:none}nav li{display:inline-block}nav a{display:block;padding:6px 12px;text-decoration:none}
